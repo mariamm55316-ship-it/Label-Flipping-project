@@ -7,6 +7,9 @@ Logistic Regression classifiers trained on CICIoT2023 (binary: Benign vs Attack)
 and evaluate a two-stage sanitisation defence (k-NN label check + outlier filtering)
 that needs no trusted clean data.
 
+## Team
+Haneen Almohammed, Neam Arnaoud, Mariam Mohammed
+
 
 ## Structure
 - `data/` dataset notes only (data not committed; see Kaggle link in report)
