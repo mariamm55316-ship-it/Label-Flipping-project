@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "files_read": 169,
+  "raw_rows_per_category": {
+    "DDoS": 33984560,
+    "DoS": 8090738,
+    "Benign": 1098195,
+    "Mirai": 2634124,
+    "Spoofing": 486504,
+    "Recon": 354565,
+    "BruteForce": 13064,
+    "Web": 24829
+  },
+  "cleaning": {
+    "rows_before_cleaning": 266691,
+    "removed_inf_or_nan": 0,
+    "removed_duplicates": 0,
+    "rows_after_cleaning": 266691
+  },
+  "shortfalls": {},
+  "n_features": 46,
+  "n_total": 182000,
+  "n_train": 145600,
+  "n_test": 36400
+}
