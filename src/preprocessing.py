@@ -260,8 +260,8 @@ def split_and_scale(X, y, cat, test_size=0.2):
 
  # smaller types save memory and disk space
  arrays = {
-     "X_train": X_train.astype("float32"),
-     "X_test": X_test.astype("float32"),
+     "X_train": X_train.astype("float64"),
+     "X_test": X_test.astype("float64"),
      "y_train": y_train.to_numpy().astype("int8"),
      "y_test": y_test.to_numpy().astype("int8"),
      "cat_train": cat_train.to_numpy().astype(str),
