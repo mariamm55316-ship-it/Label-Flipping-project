@@ -258,7 +258,9 @@ def split_and_scale(X, y, cat, test_size=0.2):
  X_train = scaler.fit_transform(X_train)
  X_test = scaler.transform(X_test)     # test uses the train mean and std
 
- # smaller types save memory and disk space
+     # X stays float64 on purpose: float32 rounding merged distinct rows, which
+    # created fake duplicates and train/test overlap (0 after the fix).
+    # y is int8 (only 0/1) and cat is plain strings.
  arrays = {
      "X_train": X_train.astype("float64"),
      "X_test": X_test.astype("float64"),
